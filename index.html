@@ -19,13 +19,22 @@
 <canvas id="bg-canvas"></canvas>
 
 <header class="navbar">
-  <div>RAM_DEV</div>
-  <nav>
+  <div class="logo">RAM_DEV</div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav-menu">
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
+    <div class="nav-overlay" id="nav-overlay"></div>
 </header>
+
 
 <section class="hero">
   <div>
@@ -38,11 +47,172 @@
   </div>
 </section>
 
-<section id="about" class="section">
-  <h2 class="reveal">About Me</h2>
-  <div class="card reveal">
-    Currently pursuing B.Tech (2nd Year).  
-    Focused on Frontend Development, UI Animations and Interactive Web Design.
+<section id="about" class="section about-section">
+
+  <div class="about-container">
+
+    <!-- LEFT SIDE -->
+    <div class="about-content reveal-left">
+      <h2>About Me</h2>
+      <h3>
+        I design and build immersive, performance-focused web experiences.
+      </h3>
+
+      <p>
+        I'm a 2nd Year B.Tech student focused on frontend architecture,
+        motion design, and interactive UI systems.
+        I combine clean engineering with refined visual execution.
+      </p>
+
+      <div class="about-stats">
+        <div class="stat">
+          <h4><span class="counter" data-target="2" data-suffix="+">0</span></h4>
+          <span>Years Learning</span>
+        </div>
+
+        <div class="stat">
+          <h4><span class="counter" data-target="10" data-suffix="+">0</span></h4>
+          <span>Projects Built</span>
+        </div>
+
+        <div class="stat">
+          <h4><span class="counter" data-target="100" data-suffix="%">0</span></h4>
+          <span>Performance Focus</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="about-visual reveal-right">
+      <div class="system-wrapper">
+        <div class="system">
+          <div class="monitor">
+            <div class="screen">
+              <img src="desk.png" alt="Portfolio Preview">
+            </div>
+            <div class="stand"></div>
+            <div class="base"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SKILLS BELOW -->
+  <div class="about-skills reveal-bottom">
+    <div class="skill-box">Frontend Development</div>
+    <div class="skill-box">UI Motion & Interaction</div>
+    <div class="skill-box">Responsive Systems</div>
+    <div class="skill-box">Performance Optimization</div>
+  </div>
+
+</section>
+
+<section class="section experience-section">
+
+  <h2 class="reveal">Experience</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item reveal">
+      <div class="timeline-content">
+        <span class="timeline-date">2024 – Present</span>
+        <h3>Frontend Development Journey</h3>
+        <p>
+          Focused on modern UI systems, responsive architecture,
+          motion design, and performance optimization.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-content">
+        <span class="timeline-date">2023</span>
+        <h3>Advanced UI Projects</h3>
+        <p>
+          Built interactive web interfaces including portfolio systems
+          and advanced e-commerce UI prototypes.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-content">
+        <span class="timeline-date">2022</span>
+        <h3>Started B.Tech</h3>
+        <p>
+          Began academic foundation in Computer Science
+          while exploring frontend development deeply.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="projects section">
+  <div class="container">
+
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Featured Project -->
+    <div class="featured-project">
+      <div class="featured-image">
+        <img src="project-main.jpg" alt="Main Project">
+      </div>
+
+      <div class="featured-content">
+        <h3>Premium Portfolio Website</h3>
+        <p>
+          Advanced interactive portfolio with Three.js particles,
+          animated timeline, magnetic buttons and custom UI effects.
+        </p>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Three.js</span>
+        </div>
+
+        <div class="project-links">
+          <a href="#">Live Demo</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Projects Grid -->
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="project2.jpg" alt="">
+        <div class="card-content">
+          <h4>Landing Page</h4>
+          <p>Modern animated marketing page.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="project3.jpg" alt="">
+        <div class="card-content">
+          <h4>Dashboard UI</h4>
+          <p>Interactive admin interface.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="purple.jpg" alt="">
+        <div class="card-content">
+          <h4>Creative Animation</h4>
+          <p>Experimental motion project.</p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
